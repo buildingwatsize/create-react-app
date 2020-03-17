@@ -391,9 +391,8 @@ ____    __    ____  ___   .___________.    _______. __   ________   _______
     \__/  \__/ /__/     \__\  |__|    |_______/    |__|  /________||_______|
 `))
   console.log();
-  console.log(chalk.red('VERY IMPORTANT:'));
-  console.log(chalk.red('Create a .env file at the root of your project for handler environments e.g. `.env`, `.env.development`, `.env.test`'));
-  console.log();
+  console.log(chalk.red('*** VERY IMPORTANT: ***'));
+  console.log('Create a .env file at the root of your project for handler environments e.g. `.env`, `.env.development`, `.env.test`');
   if (readmeExists) {
     console.log();
     console.log(
