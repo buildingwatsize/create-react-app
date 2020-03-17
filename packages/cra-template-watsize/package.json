@@ -23,8 +23,5 @@
   "files": [
     "template",
     "template.json"
-  ],
-  "dependencies": {
-    "react-router-dom": "^5.1.2"
-  }
+  ]
 }
