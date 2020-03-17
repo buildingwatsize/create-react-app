@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts",
+  "name": "watsize-base-react-scripts",
   "version": "0.1.0",
   "description": "Watsize: Configuration and scripts for Create React App.",
   "repository": {
