@@ -7,7 +7,7 @@
     "template",
     "antd"
   ],
-  "description": "The base template for Create React App by Watsize.",
+  "description": "The react-antd template for Create React App by Watsize.",
   "main": "template.json",
   "repository": {
     "type": "git",
