@@ -10,6 +10,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { ConfigProvider } from 'antd'
+import thTH from 'antd/es/locale/th_TH'
+
+if (process.env.NODE_ENV !== "development") console.log = () => { }
+
 const store = createStore(
   rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -17,9 +22,11 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ConfigProvider locale={thTH} componentSize={"large"}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ConfigProvider>
   </Provider>,
   document.getElementById('root')
 );

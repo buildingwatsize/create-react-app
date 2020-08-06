@@ -1,7 +1,18 @@
-# react-scripts
+# watsize-antd-redux [CRA Template]
 
-This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
-Please refer to its documentation:
+Create React App works on macOS, Windows, and Linux.
+If something doesn’t work, please [file an issue](https://github.com/buildingwatsize/create-react-app/issues/new).
 
-- [Getting Started](https://facebook.github.io/create-react-app/docs/getting-started) – How to create a new app.
-- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
+## Quick Start Overview
+
+Just Run this command on terminal (Don't miss to changes `test-app` to whatever you want)
+
+```sh
+npx create-react-app test-app --template cra-template-watsize-base --scripts-version watsize-base-react-scripts
+cd test-app
+npm start # or yarn start
+```
+
+## More & More
+
+- [Contact Github](https://github.com/buildingwatsize)

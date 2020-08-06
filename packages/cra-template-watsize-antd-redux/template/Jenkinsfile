@@ -32,48 +32,69 @@ pipeline {
       }
     }
 
-    stage('Read package.json for UAT') {
+    stage('Read package.json Configuration') {
       steps {
         script {
           def props = readJSON file: "/var/jenkins_home/workspace/${APP_NAME}/package.json"
-          env.version = props.version 
+          env.version = props.version
           sh "echo ${env.version}"
         }
       }
     }
 
-    stage("Build ENV docker-compose for UAT") {
+    stage("Build ENV docker-compose") {
       steps {
-        sh "echo 'TAG=${env.version}'>.env"
+        sh "echo 'TAG=${env.version}'>>.env"
+        sh "chmod 777 Dockerfile"
       }
     }
-    
+
     stage("Build Docker Image for UAT") {
       steps {
-        sh "chmod 777 Dockerfile"    
         sh "docker build -t bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-uat:${env.version} -f Dockerfile ."
       }
     }
 
-    stage("Assign docker tag & push to harbor for UAT"){
+    // stage('Preparing & Build for PREPROD') {
+    //   steps {
+    //     script {
+    //       withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
+    //         sh "rm -rf ./build"
+    //         sh "yarn build:preprod"
+    //       }
+    //     }
+    //   }
+    // }
+    
+    // stage("Build Docker Image for PREPROD") {
+    //   steps {
+    //     sh "docker build -t bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-preprod:${env.version} -f Dockerfile ."
+    //   }
+    // }
+    
+    // stage('Preparing & Build for PROD') {
+    //   steps {
+    //     script {
+    //       withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
+    //         sh "rm -rf ./build"
+    //         sh "yarn build"
+    //       }
+    //     }
+    //   }
+    // }
+
+    // stage("Build Docker Image for PROD") {
+    //   steps {
+    //     sh "docker build -t bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-prod:${env.version} -f Dockerfile ."
+    //   }
+    // }
+
+    stage("Assign docker tag & push to harbor") {
       steps {
         sh "docker login bluecurve.int.baac.or.th -u ${BC_USER} -p ${BC_PWD}"  
         sh "docker push bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-uat:${env.version}"  
-        sh "docker logout bluecurve.int.baac.or.th"
-      }
-    }
-
-    stage("Build Docker Image for PROD") {
-      steps {
-        sh "chmod 777 Dockerfile"    
-        sh "docker build -t bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-prod:${env.version} -f Dockerfile ."
-      }
-    }
-
-    stage("Assign docker tag & push to harbor for PROD"){
-      steps {
-        sh "docker login bluecurve.int.baac.or.th -u ${BC_USER} -p ${BC_PWD}"  
-        sh "docker push bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-prod:${env.version}"  
+        // sh "docker push bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-preprod:${env.version}"  
+        // sh "docker push bluecurve.int.baac.or.th/${PROJECT_NAME}/${APP_NAME}-prod:${env.version}"  
         sh "docker logout bluecurve.int.baac.or.th"
       }
     }

@@ -1,0 +1,32 @@
+.fullMinHeight {
+  min-height: 100vh !important;
+}
+
+.justifyStart {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;  
+}
+.justifyEnd {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;  
+}
+.justifyCenter {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+}
+.justifySpaceBetween {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;  
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+.width100 {
+  width: 100% !important;
+}

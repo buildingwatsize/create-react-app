@@ -1,6 +1,9 @@
+* {
+  font-family: 'promptregular', sans-serif;
+}
+
 #root {
   min-height: 100vh;
-  font-family: 'promptregular', sans-serif;
 }
 
 @font-face {

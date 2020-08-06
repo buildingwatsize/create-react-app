@@ -1,10 +1,13 @@
 {
   "env": {
     "staging": {
-      "plugins": ["transform-remove-console"]
+      "sourceMaps": true
+    },
+    "preprod": {
+      "sourceMaps": true
     },
     "production": {
-      "plugins": ["transform-remove-console"]
+      "sourceMaps": false
     }
   }
 }
