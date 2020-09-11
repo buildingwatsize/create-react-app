@@ -1,6 +1,6 @@
 {
   "name": "watsize-base-react-scripts",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Watsize: Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -108,8 +108,7 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version",
-      "ie 11"
+      "last 1 safari version"
     ]
   }
 }
