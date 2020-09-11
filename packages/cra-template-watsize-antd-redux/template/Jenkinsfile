@@ -4,8 +4,8 @@ pipeline {
   environment {
     BC_USER="admin"
     BC_PWD="baac@123"
-    PROJECT_NAME="PROJECT_NAME"
-    APP_NAME="APP_NAME"
+    PROJECT_NAME="REPLACE_WITH_YOUR_PROJECT_NAME"
+    APP_NAME="REPLACE_WITH_YOUR_APP_NAME"
   }
   stages {
     stage('Sonarqube Scanner') {

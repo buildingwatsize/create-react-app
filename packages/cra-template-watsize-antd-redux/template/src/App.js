@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
 
-import './App.css';
+import './App.less';
 import NotFound from './components/utils/NotFound'
 
 import AuthPage from './pages/AuthPage';

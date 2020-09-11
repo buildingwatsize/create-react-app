@@ -1,8 +1,8 @@
-# YOUR_APP_NAME
+# REPLACE_WITH_YOUR_APP_NAME
 
 ## 📘 About
 
-YOUR_APP_NAME คือ Template ของ create-react-app สำหรับเว็บแอพลิเคชั่น ที่ใช้เฉพาะใน BAAC เท่านั้น
+REPLACE_WITH_YOUR_APP_NAME คือ Template ของ create-react-app สำหรับเว็บแอพลิเคชั่น ที่ใช้เฉพาะใน BAAC เท่านั้น
 
 ## 📦 Built With
 
@@ -14,8 +14,8 @@ YOUR_APP_NAME คือ Template ของ create-react-app สำหรับ�
 ```mermaid
   graph LR;
 
-    Requester-->YOUR_APP_NAME
-    YOUR_APP_NAME-->YOUR_APP_API
+    Requester-->REPLACE_WITH_YOUR_APP_NAME
+    REPLACE_WITH_YOUR_APP_NAME-->REPLACE_WITH_YOUR_APP_API
 ```
 
 ## 📋 Features
@@ -31,13 +31,13 @@ No Data
 1. Clone project
 
     ```bash
-    git clone {IPANDA_LINK_TO_YOUR_APP}
+    git clone {REPLACE_WITH_YOUR_APP_NAME}
     ```
 
 2. Go to project folder
 
     ```bash
-    cd YOUR_APP_NAME
+    cd REPLACE_WITH_YOUR_APP_NAME
     ```
 
 3. Set up environment by command
@@ -66,4 +66,4 @@ No Data
 
 - package.json
 
-- IPANDA_LINK_TO_YOUR_APP, YOUR_APP_NAME และ YOUR_APP_DESCRIPTION รวมไปถึงชื่อต่าง ๆ ที่คล้ายกัน
+- REPLACE_WITH_YOUR_PROJECT_NAME, REPLACE_WITH_YOUR_APP_NAME และ REPLACE_WITH_YOUR_APP_DESCRIPTION รวมไปถึงชื่อต่าง ๆ ที่คล้ายกัน
