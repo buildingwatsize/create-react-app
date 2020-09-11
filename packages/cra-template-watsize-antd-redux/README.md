@@ -1,7 +1,7 @@
 # watsize-antd-redux [CRA Template]
 
 Create React App works on macOS, Windows, and Linux.
-If something doesn’t work, please [file an issue](https://github.com/buildingwatsize/create-react-app/issues/new).
+If something doesn’t work, please [Make an issue](https://github.com/buildingwatsize/create-react-app/issues/new).
 
 ## Quick Start Overview
 
