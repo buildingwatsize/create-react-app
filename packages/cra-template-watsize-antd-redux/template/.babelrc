@@ -1,0 +1,13 @@
+{
+  "env": {
+    "staging": {
+      "sourceMaps": true
+    },
+    "preprod": {
+      "sourceMaps": true
+    },
+    "production": {
+      "sourceMaps": false
+    }
+  }
+}

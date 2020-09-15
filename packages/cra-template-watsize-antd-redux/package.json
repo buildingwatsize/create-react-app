@@ -1,0 +1,33 @@
+{
+  "name": "cra-template-watsize-antd-redux",
+  "version": "0.1.6",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "antd",
+    "js-cookie",
+    "crypto-js",
+    "redux",
+    "react-redux",
+    "redux-devtools"
+  ],
+  "description": "The react-antd template for Create React App by Watsize.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buildingwatsize/create-react-app.git",
+    "directory": "packages/cra-template"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/buildingwatsize/create-react-app/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

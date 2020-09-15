@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noLib": true,
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "images/*": ["./src/images"],
+      "layouts/*": ["./src/layouts"],
+      "pages/*": ["./src/pages/*"],
+      "utils/*": ["./src/utils/*"]
+    }
+  }
+}
