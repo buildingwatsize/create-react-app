@@ -81,7 +81,7 @@ function tryGitCommit(appPath) {
   }
 }
 
-module.exports = function (
+module.exports = function(
   appPath,
   appName,
   verbose,
@@ -133,7 +133,7 @@ module.exports = function (
     console.log(
       chalk.yellow(
         'Root-level `dependencies` and `scripts` keys in `template.json` are deprecated.\n' +
-        'This template should be updated to use the new `package` key.'
+          'This template should be updated to use the new `package` key.'
       )
     );
     console.log('For more information, visit https://cra.link/templates');
@@ -397,19 +397,23 @@ module.exports = function (
   console.log(chalk.cyan('  cd'), cdpath);
   console.log(`  ${chalk.cyan(`${displayedCommand} start`)}`);
   console.log();
-  console.log("Thank you for choosing me :D");
+  console.log('Thank you for choosing me :D');
   console.log();
-  console.log(chalk.yellow(`
+  console.log(
+    chalk.yellow(`
 ____    __    ____  ___   .___________.    _______. __   ________   _______ 
 \\   \\  /  \\  /   / /   \\  |           |   /       ||  | |       /  |   ____|
  \\   \\/    \\/   / /  ^  \\ '---|  |----'  |   (----'|  | '---/  /   |  |__   
   \\            / /  /_\\  \\    |  |        \\   \\    |  |    /  /    |   __|  
    \\    /\\    / /  _____  \\   |  |    .----)   |   |  |   /  /----.|  |____ 
     \\__/  \\__/ /__/     \\__\\  |__|    |_______/    |__|  /________||_______|
-`))
+`)
+  );
   console.log();
   console.log(chalk.red('*** VERY IMPORTANT: ***'));
-  console.log('Create a .env file at the root of your project for handler environments e.g. `.env`, `.env.development`, `.env.test`');
+  console.log(
+    'Create a .env file at the root of your project for handler environments e.g. `.env`, `.env.development`, `.env.test`'
+  );
   if (readmeExists) {
     console.log();
     console.log(
