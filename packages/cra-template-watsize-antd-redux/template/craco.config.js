@@ -1,4 +1,5 @@
 const path = require("path")
+const webpack = require('webpack')
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 const CracoLessPlugin = require('craco-less')
 
@@ -13,7 +14,13 @@ module.exports = {
       'utils': path.resolve(__dirname, './src/utils/'),
     }
   },
+  optimization: {
+    minimize: true,
+  },
   plugins: [
+    {
+      plugin: new webpack.optimize.AggressiveMergingPlugin(),
+    },
     {
       plugin: new AntdDayjsWebpackPlugin(),
     },

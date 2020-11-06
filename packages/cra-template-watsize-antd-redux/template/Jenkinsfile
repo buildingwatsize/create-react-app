@@ -25,7 +25,7 @@ pipeline {
         script {
           withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
             sh "npm install -g yarn"
-            sh "yarn install"
+            sh "yarn"
             sh "yarn build:uatunix"
           }
         }
