@@ -1,6 +1,6 @@
 const path = require("path")
 const webpack = require('webpack')
-const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
+const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin')
 const CracoLessPlugin = require('craco-less')
 
 module.exports = {
