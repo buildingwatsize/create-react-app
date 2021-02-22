@@ -2,13 +2,13 @@
   "package": {
     "proxy": "http://localhost:5000",
     "dependencies": {
-      "@craco/craco": "^6.0.0",
+      "@craco/craco": "^6.1.1",
       "@svgr/webpack": "^5.5.0",
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
-      "antd": "^4.10.0",
-      "antd-dayjs-webpack-plugin": "^1.0.3",
+      "antd": "^4.12.3",
+      "antd-dayjs-webpack-plugin": "^1.0.6",
       "awesome-debounce-promise": "^2.1.0",
       "axios": "^0.21.1",
       "craco-less": "^1.17.1",
