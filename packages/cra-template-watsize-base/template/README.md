@@ -7,7 +7,6 @@ REPLACE_WITH_YOUR_APP_NAME คือ Web Application สำหรับการ
 ## 📦 Built With
 
 - [x] React JS
-- [x] Ant Design
 
 ## ⚒ Structure
 
