@@ -26,7 +26,7 @@ pipeline {
           withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
             sh "npm install -g yarn"
             sh "yarn"
-            sh "yarn build:uatunix"
+            sh "yarn build:uat"
           }
         }
       }
@@ -59,7 +59,7 @@ pipeline {
     //   steps {
     //     script {
     //       withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
-    //         sh "rm -rf ./build"
+    //         sh "yarn clean"
     //         sh "yarn build:preprod"
     //       }
     //     }
@@ -76,7 +76,7 @@ pipeline {
     //   steps {
     //     script {
     //       withEnv(["PATH+NODE=${env.WORKSPACE}/node/bin"]) {
-    //         sh "rm -rf ./build"
+    //         sh "yarn clean"
     //         sh "yarn build"
     //       }
     //     }

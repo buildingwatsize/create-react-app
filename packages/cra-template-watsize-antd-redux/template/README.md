@@ -2,7 +2,7 @@
 
 ## 📘 About
 
-REPLACE_WITH_YOUR_APP_NAME คือ Template ของ create-react-app สำหรับเว็บแอพลิเคชั่น ที่ใช้เฉพาะใน BAAC เท่านั้น
+REPLACE_WITH_YOUR_APP_NAME คือ Web Application สำหรับการใช้งานในชีวิตประจำวันทั่วไป เปิดให้บริการแล้ววันนี้
 
 ## 📦 Built With
 
@@ -13,14 +13,14 @@ REPLACE_WITH_YOUR_APP_NAME คือ Template ของ create-react-app สำ�
 
 ```mermaid
   graph LR;
-
     Requester-->REPLACE_WITH_YOUR_APP_NAME
     REPLACE_WITH_YOUR_APP_NAME-->REPLACE_WITH_YOUR_APP_API
 ```
 
 ## 📋 Features
 
-- `/signin` via iAuthen
+- `/` Landing Page
+- `/signin` Sign In Page
 
 ## 📝 Test Cases
 
@@ -31,7 +31,7 @@ No Data
 1. Clone project
 
     ```bash
-    git clone {REPLACE_WITH_YOUR_APP_NAME}
+    git clone {REPLACE_WITH_YOUR_APP_GIT_LINK}
     ```
 
 2. Go to project folder
@@ -52,18 +52,10 @@ No Data
 
     ```bash
     # Normal Mode
-    yarn dev
+    yarn start
 
     # Build Mode
     yarn build
     ```
 
-## 📌 REMARK
-
-กรุณาแก้ไขรายละเอียดหลังสร้าง project ใหม่ที่ไฟล์ดังนี้
-
-- .env ต่างๆ
-
-- package.json
-
-- REPLACE_WITH_YOUR_PROJECT_NAME, REPLACE_WITH_YOUR_APP_NAME และ REPLACE_WITH_YOUR_APP_DESCRIPTION รวมไปถึงชื่อต่าง ๆ ที่คล้ายกัน
+🌈 CRA Template – Made with ❤️ by Watsize 🌈

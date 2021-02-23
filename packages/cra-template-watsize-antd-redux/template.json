@@ -33,10 +33,11 @@
       "start": "craco start",
       "test": "craco test",
       "eject": "react-scripts eject",
-      "build": "GENERATE_SOURCEMAP=false && craco build",
-      "build:uatwin": "set GENERATE_SOURCEMAP=false && env-cmd -f .env.staging craco build",
-      "build:uatunix": "GENERATE_SOURCEMAP=false && env-cmd -f .env.staging craco build",
-      "build:preprod": "GENERATE_SOURCEMAP=false && env-cmd -f .env.preprod craco build"
+      "build": "craco build",
+      "clean": "rm -rf ./build/*",
+      "build:sit": "env-cmd -f .env.development craco build",
+      "build:uat": "env-cmd -f .env.staging craco build",
+      "build:preprod": "env-cmd -f .env.preprod craco build"
     },
     "browserslist": {
       "production": [">0.2%", "not dead", "not op_mini all"],
