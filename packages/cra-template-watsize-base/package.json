@@ -1,0 +1,27 @@
+{
+  "name": "cra-template-watsize-base",
+  "version": "0.2.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "watsize"
+  ],
+  "description": "The base react-js template for Create React App by Watsize.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buildingwatsize/create-react-app.git",
+    "directory": "packages/cra-template"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/buildingwatsize/create-react-app/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
